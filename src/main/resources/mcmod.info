@@ -1,0 +1,21 @@
+[
+{
+  "modid": "AdvancedSteelmaking",
+  "name": "Advanced Steelmaking",
+  "description": "A mod all about the production and use of steel",
+  "version": "1.0",
+  "mcversion": "1.10.2",
+  "url": "https://github.com/Taiwar/AdvancedSteelmaking",
+  "updateUrl": "",
+  "authorList": [
+    "Taiwar"
+  ],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [
+  ],
+  "parent":"",
+  "dependencies": [
+  ]
+}
+]
