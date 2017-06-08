@@ -1,0 +1,8 @@
+# Items
+item.advancedsteelmaking:steel_ingot.name=Steel Ingot
+
+# Blocks
+tile.advancedsteelmaking:steel_block.name=Block of Steel
+
+# CreativeTabs
+itemGroup.advancedsteelmaking=Advanced Steelmaking
