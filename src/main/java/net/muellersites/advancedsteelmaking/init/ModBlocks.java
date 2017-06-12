@@ -1,7 +1,8 @@
 package net.muellersites.advancedsteelmaking.init;
 
 import net.minecraftforge.fml.common.registry.GameRegistry;
-import net.muellersites.advancedsteelmaking.block.block.BlockBase;
+import net.muellersites.advancedsteelmaking.block.BlockArcFurnace;
+import net.muellersites.advancedsteelmaking.block.base.BlockBase;
 import net.muellersites.advancedsteelmaking.block.BlockSteel;
 import net.muellersites.advancedsteelmaking.reference.AdvancedSteelmaking;
 
@@ -15,6 +16,7 @@ public class ModBlocks {
     private static final List<BlockBase> BLOCKS = new ArrayList<>();
 
     public static final BlockBase STEEL_BLOCK = new BlockSteel();
+    public static final BlockBase ARC_FURNACE = new BlockArcFurnace();
 
     private ModBlocks() {}
 
@@ -25,4 +27,5 @@ public class ModBlocks {
     public static void register(BlockBase block) {
         BLOCKS.add(block);
     }
+
 }

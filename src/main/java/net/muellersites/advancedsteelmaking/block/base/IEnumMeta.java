@@ -1,4 +1,4 @@
-package net.muellersites.advancedsteelmaking.block.block;
+package net.muellersites.advancedsteelmaking.block.base;
 
 public interface IEnumMeta {
 

@@ -1,4 +1,4 @@
-package net.muellersites.advancedsteelmaking.utility;
+package net.muellersites.advancedsteelmaking.util;
 
 import net.minecraftforge.fml.common.FMLLog;
 import net.muellersites.advancedsteelmaking.reference.AdvancedSteelmaking;

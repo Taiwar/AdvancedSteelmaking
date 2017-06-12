@@ -1,6 +1,7 @@
 package net.muellersites.advancedsteelmaking.init;
 
 import net.minecraftforge.fml.common.registry.GameRegistry;
+import net.muellersites.advancedsteelmaking.item.ItemGraphiteElectrode;
 import net.muellersites.advancedsteelmaking.item.base.ItemBase;
 import net.muellersites.advancedsteelmaking.item.ItemSteel;
 import net.muellersites.advancedsteelmaking.reference.AdvancedSteelmaking;
@@ -15,6 +16,7 @@ public class ModItems {
     private static final List<ItemBase> ITEMS = new ArrayList<>();
 
     public static final ItemBase STEEL_INGOT = new ItemSteel();
+    public static final ItemBase GRAPHITE_ELECTRODE = new ItemGraphiteElectrode();
 
     private ModItems() {}
 

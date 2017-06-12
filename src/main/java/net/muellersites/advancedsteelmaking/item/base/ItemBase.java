@@ -11,7 +11,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 import net.muellersites.advancedsteelmaking.creativetab.CreativeTab;
 import net.muellersites.advancedsteelmaking.init.ModItems;
 import net.muellersites.advancedsteelmaking.reference.AdvancedSteelmaking;
-import net.muellersites.advancedsteelmaking.utility.ResourceLocationHelper;
+import net.muellersites.advancedsteelmaking.util.ResourceLocationHelper;
 
 import java.util.ArrayList;
 import java.util.List;

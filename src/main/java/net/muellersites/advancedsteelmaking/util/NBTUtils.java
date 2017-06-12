@@ -1,4 +1,4 @@
-package net.muellersites.advancedsteelmaking.utility;
+package net.muellersites.advancedsteelmaking.util;
 
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;

@@ -1,5 +1,15 @@
 {
-  "variants": {
-    "normal": { "model": "advancedsteelmaking:steel_block" }
+  "forge_marker": 1,
+  "defaults":
+  {
+    "model": "advancedsteelmaking:steel_block"
+  },
+  "variants":
+  {
+    "normal": [{}],
+    "type":
+    {
+      "steel_block": {}
+    }
   }
 }

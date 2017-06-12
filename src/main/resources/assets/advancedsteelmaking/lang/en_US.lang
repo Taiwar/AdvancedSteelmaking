@@ -1,8 +1,10 @@
 # Items
 item.advancedsteelmaking:steel_ingot.name=Steel Ingot
+item.advancedsteelmaking:graphite_electrode.name=Graphite Electrode
 
 # Blocks
 tile.advancedsteelmaking:steel_block.name=Block of Steel
+tile.advancedsteelmaking:arc_furnace.name=Electric Arc Furnace
 
 # CreativeTabs
 itemGroup.advancedsteelmaking=Advanced Steelmaking

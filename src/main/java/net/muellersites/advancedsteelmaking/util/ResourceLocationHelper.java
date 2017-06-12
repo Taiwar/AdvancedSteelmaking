@@ -1,4 +1,4 @@
-package net.muellersites.advancedsteelmaking.utility;
+package net.muellersites.advancedsteelmaking.util;
 
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.util.ResourceLocation;

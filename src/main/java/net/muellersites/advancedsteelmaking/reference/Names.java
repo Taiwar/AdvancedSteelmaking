@@ -4,10 +4,12 @@ public class Names {
 
     public static final class Blocks {
         public static final String STEEL_BLOCK = "steel_block";
+        public static final String ARC_FURNACE = "arc_furnace";
     }
 
     public static final class Items {
         public static final String STEEL_INGOT = "steel_ingot";
+        public static final String GRAPHITE_ELECTRODE = "graphite_electrode";
     }
 
     public static final class Materials {

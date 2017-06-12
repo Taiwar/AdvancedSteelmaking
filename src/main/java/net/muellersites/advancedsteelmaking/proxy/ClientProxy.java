@@ -8,7 +8,7 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
 import net.minecraftforge.fml.common.event.FMLServerStoppingEvent;
-import net.muellersites.advancedsteelmaking.block.block.BlockBase;
+import net.muellersites.advancedsteelmaking.block.base.BlockBase;
 import net.muellersites.advancedsteelmaking.init.ModBlocks;
 import net.muellersites.advancedsteelmaking.init.ModItems;
 import net.muellersites.advancedsteelmaking.item.base.ItemBase;

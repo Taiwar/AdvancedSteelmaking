@@ -4,7 +4,7 @@ import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.fml.client.event.ConfigChangedEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.muellersites.advancedsteelmaking.reference.AdvancedSteelmaking;
-import net.muellersites.advancedsteelmaking.utility.LogHelper;
+import net.muellersites.advancedsteelmaking.util.LogHelper;
 
 import java.io.File;
 

@@ -1,0 +1,96 @@
+{
+    "__comment": "Model generated using MrCrayfish's Model Creator (http://mrcrayfish.com/modelcreator/)",
+"ambientocclusion": false,
+    "textures": {
+        "particle": "blocks/advancedsteelmaking:blocks/grey_top",
+        "0": "advancedsteelmaking:blocks/arc_furnace",
+        "1": "advancedsteelmaking:blocks/furncace_top",
+        "2": "advancedsteelmaking:blocks/grey_base",
+        "3": "advancedsteelmaking:blocks/grey_top"
+    },
+    "elements": [
+        {
+            "name": "Base",
+            "from": [ 0.0, 0.0, 0.0 ], 
+            "to": [ 16.0, 11.0, 16.0 ], 
+            "faces": {
+                "north": { "texture": "#0", "uv": [ 0.0, 0.0, 16.0, 11.0 ] },
+                "east": { "texture": "#0", "uv": [ 0.0, 0.0, 16.0, 11.0 ] },
+                "south": { "texture": "#0", "uv": [ 0.0, 0.0, 16.0, 11.0 ] },
+                "west": { "texture": "#0", "uv": [ 0.0, 0.0, 16.0, 11.0 ] },
+                "up": { "texture": "#1", "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+                "down": { "texture": "#2", "uv": [ 0.0, 0.0, 16.0, 16.0 ] }
+            }
+        },
+        {
+            "name": "Rod_Back_1",
+            "from": [ 11.0, 11.0, 2.0 ], 
+            "to": [ 15.0, 16.0, 6.0 ], 
+            "faces": {
+                "north": { "texture": "#3", "uv": [ 0.0, 0.0, 4.0, 5.0 ] },
+                "east": { "texture": "#3", "uv": [ 0.0, 0.0, 4.0, 5.0 ] },
+                "south": { "texture": "#3", "uv": [ 0.0, 0.0, 4.0, 5.0 ] },
+                "up": { "texture": "#3", "uv": [ 0.0, 0.0, 4.0, 4.0 ] }
+            }
+        },
+        {
+            "name": "Rod_Back_2",
+            "from": [ 11.0, 11.0, 10.0 ], 
+            "to": [ 15.0, 16.0, 14.0 ], 
+            "faces": {
+                "north": { "texture": "#3", "uv": [ 0.0, 0.0, 4.0, 5.0 ] },
+                "east": { "texture": "#3", "uv": [ 0.0, 0.0, 4.0, 5.0 ] },
+                "south": { "texture": "#3", "uv": [ 0.0, 0.0, 4.0, 5.0 ] },
+                "up": { "texture": "#3", "uv": [ 0.0, 0.0, 4.0, 4.0 ] }
+            }
+        },
+        {
+            "name": "Rod_Connector_2",
+            "from": [ 3.0, 13.0, 10.0 ], 
+            "to": [ 11.0, 16.0, 14.0 ], 
+            "faces": {
+                "north": { "texture": "#3", "uv": [ 0.0, 0.0, 8.0, 3.0 ] },
+                "south": { "texture": "#3", "uv": [ 0.0, 0.0, 8.0, 3.0 ] },
+                "west": { "texture": "#3", "uv": [ 0.0, 0.0, 4.0, 3.0 ] },
+                "up": { "texture": "#3", "uv": [ 0.0, 0.0, 8.0, 4.0 ] },
+                "down": { "texture": "#3", "uv": [ 0.0, 0.0, 8.0, 4.0 ] }
+            }
+        },
+        {
+            "name": "Rod_Connector_1",
+            "from": [ 3.0, 13.0, 2.0 ], 
+            "to": [ 11.0, 16.0, 6.0 ], 
+            "faces": {
+                "north": { "texture": "#3", "uv": [ 0.0, 0.0, 8.0, 3.0 ] },
+                "south": { "texture": "#3", "uv": [ 0.0, 0.0, 8.0, 3.0 ] },
+                "west": { "texture": "#3", "uv": [ 0.0, 0.0, 4.0, 3.0 ] },
+                "up": { "texture": "#3", "uv": [ 0.0, 0.0, 8.0, 4.0 ] },
+                "down": { "texture": "#3", "uv": [ 0.0, 0.0, 8.0, 4.0 ] }
+            }
+        },
+        {
+            "name": "Rod_Front_1",
+            "from": [ 3.0, 11.0, 2.0 ], 
+            "to": [ 5.0, 13.0, 6.0 ], 
+            "faces": {
+                "north": { "texture": "#3", "uv": [ 0.0, 0.0, 2.0, 2.0 ] },
+                "east": { "texture": "#3", "uv": [ 0.0, 0.0, 4.0, 2.0 ] },
+                "south": { "texture": "#3", "uv": [ 0.0, 0.0, 2.0, 2.0 ] },
+                "west": { "texture": "#3", "uv": [ 0.0, 0.0, 4.0, 2.0 ] },
+                "down": { "texture": "#3", "uv": [ 0.0, 0.0, 2.0, 4.0 ] }
+            }
+        },
+        {
+            "name": "Rod_Front_2",
+            "from": [ 3.0, 11.0, 10.0 ], 
+            "to": [ 5.0, 13.0, 14.0 ], 
+            "faces": {
+                "north": { "texture": "#3", "uv": [ 0.0, 0.0, 2.0, 2.0 ] },
+                "east": { "texture": "#3", "uv": [ 0.0, 0.0, 4.0, 2.0 ] },
+                "south": { "texture": "#3", "uv": [ 0.0, 0.0, 2.0, 2.0 ] },
+                "west": { "texture": "#3", "uv": [ 0.0, 0.0, 4.0, 2.0 ] },
+                "down": { "texture": "#3", "uv": [ 0.0, 0.0, 2.0, 4.0 ] }
+            }
+        }
+    ]
+}
