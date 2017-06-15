@@ -186,7 +186,7 @@ public class NBTUtils {
             return itemStack.getTagCompound().getInteger(keyName);
         }
 
-        return null;
+        return 0;
     }
 
     public static void setInteger(ItemStack itemStack, String keyName, int keyValue) {

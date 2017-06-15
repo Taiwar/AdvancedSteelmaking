@@ -66,13 +66,11 @@ public abstract class CommonProxy implements IProxy {
 
     }
 
-    public static <T extends TileEntity & BlockInterfaces.IGuiTile> void openGuiForTile(@Nonnull EntityPlayer player, @Nonnull T tile)
-    {
+    public static <T extends TileEntity & BlockInterfaces.IGuiTile> void openGuiForTile(@Nonnull EntityPlayer player, @Nonnull T tile) {
         player.openGui(AdvancedSteelmaking.instance, tile.getGuiID(), tile.getWorld(), tile.getPos().getX(), tile.getPos().getY(), tile.getPos().getZ());
     }
 
-    public static void openGuiForItem(@Nonnull EntityPlayer player, @Nonnull EntityEquipmentSlot slot)
-    {
+    public static void openGuiForItem(@Nonnull EntityPlayer player, @Nonnull EntityEquipmentSlot slot) {
         ItemStack stack = player.getItemStackFromSlot(slot);
         if(stack==null || !(stack.getItem() instanceof IGuiItem))
             return;

@@ -32,11 +32,12 @@ public class ItemBlockBase extends ItemBlock {
     {
         return damageValue;
     }
+
     @Override
-    public void getSubItems(Item item, CreativeTabs tab, List<ItemStack> itemList)
-    {
+    public void getSubItems(Item item, CreativeTabs tab, List<ItemStack> itemList) {
         this.block.getSubBlocks(item, tab, itemList);
     }
+
     @Override
     public String getUnlocalizedName(ItemStack stack)
     {
@@ -48,8 +49,7 @@ public class ItemBlockBase extends ItemBlock {
         if(!((BlockBase)this.block).canASBlockBePlaced(world, pos, newState, side, hitX,hitY,hitZ, player, stack))
             return false;
         boolean ret = super.placeBlockAt(stack, player, world, pos, side, hitX, hitY, hitZ, newState);
-        if(ret)
-        {
+        if(ret) {
             ((BlockBase)this.block).onASBlockPlacedBy(world, pos, newState, side, hitX,hitY,hitZ, player, stack);
         }
         return ret;

@@ -1,13 +1,11 @@
-package net.muellersites.advancedsteelmaking.util;
+package net.muellersites.advancedsteelmaking.common.gui;
 
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.Container;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.inventory.Slot;
 import net.minecraft.item.ItemStack;
-import net.muellersites.advancedsteelmaking.AdvancedSteelmaking;
 import net.muellersites.advancedsteelmaking.api.ArcFurnaceRecipe;
-import net.muellersites.advancedsteelmaking.client.gui.container.ContainerArcFurnace;
 import net.muellersites.advancedsteelmaking.init.ModItems;
 
 public class ASSlot extends Slot {
@@ -63,6 +61,16 @@ public class ASSlot extends Slot {
         @Override
         public boolean isItemValid(ItemStack itemStack) {
             return itemStack!=null && ModItems.GRAPHITE_ELECTRODE.equals(itemStack.getItem());
+        }
+    }
+
+    public static class ArcAdditive extends ASSlot {
+        public ArcAdditive(Container container, IInventory inv, int id, int x, int y) {
+            super(container, inv, id, x, y);
+        }
+        @Override
+        public boolean isItemValid(ItemStack itemStack) {
+            return itemStack!=null && ArcFurnaceRecipe.isValidRecipeAdditive(itemStack);
         }
     }
 

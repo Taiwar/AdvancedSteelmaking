@@ -1,6 +1,8 @@
 # Items
 item.advancedsteelmaking:steel_ingot.name=Steel Ingot
 item.advancedsteelmaking:graphite_electrode.name=Graphite Electrode
+item.advancedsteelmaking:silicon.name=Silicon
+item.advancedsteelmaking:scrap.name=Scrap
 
 # Blocks
 tile.advancedsteelmaking:steel_block.name=Block of Steel

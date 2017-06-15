@@ -5,7 +5,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.common.network.IGuiHandler;
 import net.muellersites.advancedsteelmaking.client.gui.GuiArcFurnace;
-import net.muellersites.advancedsteelmaking.client.gui.container.ContainerArcFurnace;
+import net.muellersites.advancedsteelmaking.common.gui.container.ContainerArcFurnace;
 import net.muellersites.advancedsteelmaking.reference.GuiIds;
 import net.muellersites.advancedsteelmaking.tileentity.TileEntityArcFurnace;
 

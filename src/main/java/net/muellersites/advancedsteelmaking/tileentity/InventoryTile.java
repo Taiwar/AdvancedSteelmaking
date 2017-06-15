@@ -45,8 +45,7 @@ public class InventoryTile implements IInventory {
     }
 
     @Override
-    public ItemStack getStackInSlot(int index)
-    {
+    public ItemStack getStackInSlot(int index) {
         return inv.getInventory()[index];
     }
 

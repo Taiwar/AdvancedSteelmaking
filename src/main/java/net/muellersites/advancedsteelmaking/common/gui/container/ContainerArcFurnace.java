@@ -1,4 +1,4 @@
-package net.muellersites.advancedsteelmaking.client.gui.container;
+package net.muellersites.advancedsteelmaking.common.gui.container;
 
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
@@ -6,7 +6,7 @@ import net.minecraft.inventory.Slot;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
-import net.muellersites.advancedsteelmaking.util.ASSlot;
+import net.muellersites.advancedsteelmaking.common.gui.ASSlot;
 import net.muellersites.advancedsteelmaking.tileentity.TileEntityArcFurnace;
 
 public class ContainerArcFurnace extends ContainerBase<TileEntityArcFurnace> {
@@ -18,10 +18,11 @@ public class ContainerArcFurnace extends ContainerBase<TileEntityArcFurnace> {
         this.addSlotToContainer(new ASSlot.ArcElectrode(this, this.inv, 1, 80,4));
         this.addSlotToContainer(new ASSlot.ArcElectrode(this, this.inv, 2, 98,4));
 
-        this.addSlotToContainer(new ASSlot.ArcInput(this, this.inv, 3, 26,56));
-        this.addSlotToContainer(new ASSlot.Output(this, this.inv, 4, 134,56));
+        this.addSlotToContainer(new ASSlot.ArcInput(this, this.inv, 3, 14,56));
+        this.addSlotToContainer(new ASSlot.ArcAdditive(this, this.inv, 4, 38,56));
+        this.addSlotToContainer(new ASSlot.Output(this, this.inv, 5, 134,56));
 
-        slotCount=5;
+        slotCount=6;
 
         for (int i = 0; i < 3; i++)
             for (int j = 0; j < 9; j++)

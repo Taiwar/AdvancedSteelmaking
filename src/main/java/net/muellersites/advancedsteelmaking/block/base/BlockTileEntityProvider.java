@@ -52,8 +52,7 @@ public abstract class BlockTileEntityProvider<E extends Enum<E> & BlockBase.IBlo
                 IItemHandler h = tile.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null);
                 if(h instanceof ASInventoryHandler)
                     for(int i = 0; i < h.getSlots(); i++)
-                        if(h.getStackInSlot(i)!=null)
-                        {
+                        if(h.getStackInSlot(i)!=null) {
                             spawnAsEntity(world, pos, h.getStackInSlot(i));
                             ((ASInventoryHandler)h).setStackInSlot(i, null);
                         }
@@ -82,12 +81,7 @@ public abstract class BlockTileEntityProvider<E extends Enum<E> & BlockBase.IBlo
             PropertyDirection prop = state.getPropertyNames().contains(ASProperties.FACING_HORIZONTAL)?ASProperties.FACING_HORIZONTAL: ASProperties.FACING_ALL;
             LogHelper.info("prop: " + prop);
             LogHelper.info("state prop names: " + state.getPropertyNames());
-            if (prop == ASProperties.FACING_ALL) {
-                LogHelper.info("well shit");
-            } else {
-                LogHelper.info("Yay");
-                state = applyProperty(state, prop, ((IDirectionalTile)tile).getFacing());
-            }
+            state = applyProperty(state, prop, ((IDirectionalTile)tile).getFacing());
         }
         else if(state.getPropertyNames().contains(ASProperties.FACING_HORIZONTAL))
             state = state.withProperty(ASProperties.FACING_HORIZONTAL, getDefaultFacing());
