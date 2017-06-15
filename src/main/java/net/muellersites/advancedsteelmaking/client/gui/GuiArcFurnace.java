@@ -52,12 +52,15 @@ public class GuiArcFurnace extends GuiContainer {
         if(tile.processMax>0&&tile.process>0) {
             // Draw progress
             int h = (int)(14*(tile.process/(float)tile.processMax));
-            int w = (int)(23*(tile.process/(float)tile.processMax));
+            int w = (int)(22*(tile.process/(float)tile.processMax));
 
-            this.drawTexturedModalRect(guiLeft+64,guiTop+26+14-h, 179, 14-h, 5, h);
-            this.drawTexturedModalRect(guiLeft+82,guiTop+26+14-h, 179, 14-h, 5, h);
-            this.drawTexturedModalRect(guiLeft+100,guiTop+26+14-h, 179, 14-h, 5, h);
-            this.drawTexturedModalRect(guiLeft+77+23-w,guiTop+55, 178-23+w, 16, w, 16);
+            // Draw arcs
+            this.drawTexturedModalRect(guiLeft+64,guiTop+26+14-h, 179, 14-h, 9, h);
+            this.drawTexturedModalRect(guiLeft+82,guiTop+26+14-h, 179, 14-h, 9, h);
+            this.drawTexturedModalRect(guiLeft+100,guiTop+26+14-h, 179, 14-h, 9, h);
+
+            // Draw arrow
+            this.drawTexturedModalRect(guiLeft+76,guiTop+56, 177, 17, 22-w, 17);
         }
 
         // Todo: remove dummy

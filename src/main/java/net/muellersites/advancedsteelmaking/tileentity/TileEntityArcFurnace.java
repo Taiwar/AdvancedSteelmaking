@@ -20,7 +20,6 @@ import net.muellersites.advancedsteelmaking.init.ModBlocks;
 import net.muellersites.advancedsteelmaking.reference.GuiIds;
 import net.muellersites.advancedsteelmaking.util.ASInventoryHandler;
 import net.muellersites.advancedsteelmaking.util.IASInventory;
-import net.muellersites.advancedsteelmaking.util.LogHelper;
 import net.muellersites.advancedsteelmaking.util.Utils;
 
 import javax.annotation.Nullable;
@@ -44,7 +43,7 @@ public class TileEntityArcFurnace extends TileEntityBase implements IASInventory
         facing = EnumFacing.getFront(nbt.getInteger("facing"));
 
         if(!descPacket) {
-            inventory = Utils.readInventory(nbt.getTagList("inventory", 10), 4);
+            inventory = Utils.readInventory(nbt.getTagList("inventory", 10), 6);
         }
     }
 
@@ -167,8 +166,7 @@ public class TileEntityArcFurnace extends TileEntityBase implements IASInventory
         boolean write = false;
         NBTTagList invList = new NBTTagList();
         for(int i=0; i<this.inventory.length; i++)
-            if(this.inventory[i] != null)
-            {
+            if(this.inventory[i] != null) {
                 if(toItem)
                     write = true;
                 NBTTagCompound itemTag = new NBTTagCompound();
@@ -211,7 +209,6 @@ public class TileEntityArcFurnace extends TileEntityBase implements IASInventory
             boolean b = false;
             if(process>0) {
                 // Check if input, additive and electrodes aren't empty
-                LogHelper.info("Arc Process ongoing");
                 if(inventory[3]==null || inventory[4]==null && !hasElectrodes()) {
                     process=0;
                     processMax=0;
@@ -228,10 +225,8 @@ public class TileEntityArcFurnace extends TileEntityBase implements IASInventory
                 this.markContainingBlockForUpdate(null);
             } else {
                 if(active) {
-                    LogHelper.info("Arc furnace active, trying to do stuff to inv according to recipe");
                     ArcFurnaceRecipe recipe = getRecipe();
                     if(recipe!=null) {
-                        LogHelper.info("Woo, stuffs ready!");
                         Utils.modifyInvStackSize(inventory, 3, -1);
                         Utils.modifyInvStackSize(inventory, 4, -1);
                         if(inventory[5]!=null)
@@ -244,7 +239,6 @@ public class TileEntityArcFurnace extends TileEntityBase implements IASInventory
                 }
                 ArcFurnaceRecipe recipe = getRecipe();
                 if(recipe!=null && hasElectrodes()) {
-                    LogHelper.info("Stuff isn't ready but its working");
                     for(int i = 0; i < 3; i++)
                         if(this.inventory[i].attemptDamageItem(1, worldObj.rand)) {
                             this.inventory[i] = null;
@@ -280,7 +274,6 @@ public class TileEntityArcFurnace extends TileEntityBase implements IASInventory
         if(recipe==null)
             return null;
 
-        LogHelper.info("Got recipe for input: " + inventory[3] + " and additive: " + inventory[4]);
         if(inventory[5]==null || (OreDictionary.itemMatches(inventory[5],recipe.output,false) && inventory[5].stackSize+recipe.output.stackSize<=getSlotLimit(5)) ) {
             return recipe;
         }
